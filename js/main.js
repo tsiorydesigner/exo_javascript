@@ -132,7 +132,7 @@ function editStudent(index) {
     document.getElementById('submitBtn').textContent = '✏️ Modifier';
     window.scrollTo({ top: 0, behavior: 'smooth' });
 }
-
+//fonction supprimer 
 function deleteStudent(index) {
     if (confirm('Êtes-vous sûr de vouloir supprimer cet étudiant ?')) {
         students.splice(index, 1);
@@ -141,7 +141,7 @@ function deleteStudent(index) {
         showMessage('Étudiant supprimé avec succès !', 'success');
     }
 }
-
+//fonction supprimer tout les listes:
 function effacerTout() {
     if (confirm('Êtes-vous sûr de vouloir supprimer TOUS les étudiants ?')) {
         students = [];
@@ -157,7 +157,7 @@ function resetForm() {
     editIndex = -1;
     document.getElementById('submitBtn').textContent = '💾 Enregistrer';
 }
-
+//fonction imprimer liste //
 function imprimerListe() {
     if (students.length === 0) {
         showMessage('Aucun étudiant à imprimer !', 'error');

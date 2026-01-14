@@ -8,7 +8,7 @@ window.addEventListener('load', () => {
 
 function setupImagePreview() {
     const imageInput = document.getElementById('image');
-    const preview = document.getElementById('imagePreview');
+    const preview = documena.getElementById('imagePreview');
     const previewImg = document.getElementById('previewImg');
 
     imageInput.addEventListener('change', (e) => {

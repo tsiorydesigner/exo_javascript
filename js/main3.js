@@ -187,6 +187,7 @@ function showMessage(text, type) {
     messageDiv.textContent = text;
     messageDiv.className = `message ${type} show`;
     
+    
     setTimeout(() => {
         messageDiv.classList.remove('show');
     }, 5000);
